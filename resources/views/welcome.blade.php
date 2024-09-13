@@ -1,4 +1,6 @@
 @extends('layouts.master')
 @section('content')
-    Hi
-@endsection
+    @foreach($users as $user)
+    Hi, {{ $user->name }} <br>
+    @endforeach
+    @endsection
